@@ -97,11 +97,10 @@ function init() {
   d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
 
     // Get the names field
+     // Use d3 to select the dropdown with id of `#selDataset`
     var selector = d3.select("#selDataset");
 
-    // Use d3 to select the dropdown with id of `#selDataset`
-
-
+    
     // Use the list of sample names to populate the select options
     // Hint: Inside a loop, you will need to use d3 to append a new
     // option for each sample name.
